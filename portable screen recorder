@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #app-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #video-container {
+            border: 1px solid #ddd;
+            margin-bottom: 1rem;
+        }
+
+        #controls {
+            display: flex;
+        }
+
+        #start-btn, #stop-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Screen Recorder Tool</h1>
+        <div id="video-container">
+            <video id="recorded-video" controls></video>
+        </div>
+        <div id="controls">
+            <button id="start-btn">Start Recording</button>
+            <button id="stop-btn">Stop Recording</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
